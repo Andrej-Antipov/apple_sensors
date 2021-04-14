@@ -29,14 +29,10 @@ For intel Mac, an easier way to get sensor infomation:
 `sudo powermetrics`
 
 
-## Demo: screen shot and screen record
-- screen record : screen_record.mp4[1.4MB] or
-![screen record](https://raw.githubusercontent.com/fermion-star/apple_sensors/master/demo/screen_record.low.gif)
-
+## Demo: screen shot 
 - screen shot
-![screen shot](https://raw.githubusercontent.com/fermion-star/apple_sensors/master/demo/screen_shot.png)
+![screen shot](https://github.com/Andrej-Antipov/apple_sensors/blob/master/demo/33.png)
 <!---
-![screen record](screen_record.mp4)
 
 ![screen shot](screen_shot.png)
 --->
