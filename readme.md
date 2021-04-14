@@ -1,5 +1,7 @@
 # Temperature Sensor Monitor for Apple Silicon M1
 
+## Now easy run sensors window from applet M1 Sensors
+
 - `temp_sensor.m`: modified on the Objective-C [code](https://github.com/freedomtan/sensors/blob/master/sensors/sensors.m) for iOS sensor by [freedomtan](https://github.com/freedomtan);
 
 - `monitor.py`: a wrapper for `temp_sensor.m` output for monitoring temperature in the terminal.
