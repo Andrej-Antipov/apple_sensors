@@ -4,7 +4,8 @@ Only test with my Macbook air with M1. Please check your mac's `ioreg -lfx` outp
 
 Usage
 
-Download applet. Execute terminal command xattr -rc /applet path/ (drag'n'drop the applet on terminal window after that command) and lounch the applet. First start ask you to install additional support tool from apple for pyton 3 support. If or after its download and install M1 sensors will work as expected. Tested up to Big Sur 11.6  
+Download applet. Execute terminal command xattr -rc /applet path/ (drag'n'drop the applet on terminal window after that command) and lounch the applet. First start may get ask you to install additional support tool from apple for pyton 3 support. After its download and install M1 sensors will work as expected. Tested up to Big Sur 11.6
+To exit press ctrl+c in the prog terminal window. The window will closed after cancel execution automatically. 
 
 ## References
 
