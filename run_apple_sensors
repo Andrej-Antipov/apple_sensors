@@ -1,0 +1,22 @@
+#!/bin/bash
+
+close_win(){
+	sleep 2
+	while true; do
+if [[ $( ps -ax | grep -v grep| grep temp_sensor | egrep -o 'ttys[0-9]{1,3}' | wc -l |  bc ) -gt 0 ]]; then sleep 2; else break; fi; done
+printf "\033[?25h"
+term=$(ps)
+if [[ $( echo "$term" | egrep -o 'ttys[0-9]{1,3}' | wc -l |  bc ) -gt 2 ]]; then
+osascript -e 'tell application "Terminal" to close (every window whose name contains "run_apple_sensors")' & exit
+else
+osascript -e 'tell application "Terminal" to close (every window whose name contains "run_apple_sensors")' && osascript -e 'quit app "terminal.app"' & exit
+fi
+	}
+
+clear && printf '\e[8;34;94t' && printf '\e[3J' && printf "\033[H"
+osascript -e 'tell application "Terminal" to  set current settings of window 1 to settings set "ocean"'
+ROOT="$(dirname "$0")"; printf "\033[?25l"
+close_win &
+"$ROOT"/temp_sensor | "$ROOT"/monitor.py 
+
+
